@@ -10,79 +10,102 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,800&display=swap" rel="stylesheet">
   <title>Emily Spieler Photography</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Emily Spieler Photography</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="engagements.html">Engagements</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="contact.html">Contact</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="emilyspielerphotography.com">Portrait Site</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Emily Spieler Photography<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Weddings <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="engagements.html">Engagements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portraits.html">Portraits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
 <div class="container">
   <div class="row">
     <div class="col-md-12 d-flex justify-content-center mt-5">
-      <h1>Hello world</h1>
+      <h1>Emily Spieler Photography</h1>
+    </div>
+    <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
+      <h2>Chicago Wedding and Portrait Photography</h2>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row justify-content-center">
-    <div class="col-md-4 mt-5 bg-light rounded">
-      <h1 class="text-center font-weight-bold text-primary">Contact Us</h1>
-      <hr class="bg-light">
-      <h5 class="text-center text-success"><?= $result; ?></h5>
-      <form action="https://formspree.io/mbjradjz" method="post" id="form-box" class="p-2">
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-user"></i></span>
+      <!-- Grid row -->
+    <div class="row">
+      <div class="row padding-below">
+        <div class="col-md-4">
+          <img class="img-fluid" src="images/contact/1.jpg" alt="Card image cap">
+        </div>
+        <div class="col-md-4 padding-below">
+          <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
+            <h1>Who We Are!</h1>
           </div>
-          <input type="text" name="name" class="form-control" placeholder="Enter your name" required>
+          <p>For us, an enjoyable customer experience is just as important as creating memorable images. Because of this, we aren't just hired professionals. We are your friends with cameras. Taking photographs should not be a chore; it should be the highlight of your day. We love what we do and our enthusiasm is infectious. Send us a message to learn more!</p>
         </div>
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-          </div>
-          <input type="email" name="email" class="form-control" placeholder="Enter your email" required>
+        <div class="col-md-4">
+          <img class="img-fluid" src="images/contact/40.jpg" alt="Card image cap">
         </div>
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-at"></i></span>
-          </div>
-          <input type="text" name="subject" class="form-control" placeholder="Enter subject" required>
+        <hr>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
+        <h1>Get in Touch!</h1>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
+    <!-- Grid column -->
+    <form action="https://formspree.io/meqklkna" method="POST">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputEmail4">First Name</label>
+          <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
         </div>
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"><i class="fas fa-comment-alt"></i></span>
-          </div>
-          <textarea name="msg" id="msg" class="form-control" placeholder="Write your message" cols="30" rows="4" required></textarea>
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Last Name</label>
+          <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
         </div>
-        <div class="form-group">
-          <input type="submit" name="submit" id="submit" class="btn btn-primary btn-block" value="Send">
-        </div>
-      </form>
+      </div>
+      <div class="form-group">
+        <label for="inputAddress">Email Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="Email Address">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">What type of shoot are you interested in?</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Wedding, Portrait, etc.">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Estimated Budget?</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Estimated Photography Budget">
+      </div>
+      <div class="form-group">
+        <label for="inputAddress2">Anything else you would like to share?</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Tell us about how we can help you!">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+      </div>
     </div>
-  </div>
-</div>
-
+    </div>
 
 </body>
 <!-- Footer -->
@@ -90,103 +113,21 @@
 
   <!-- Footer Links -->
   <div class="container">
-
     <!-- Grid row-->
-    <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">About us</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Products</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Awards</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Help</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-2 mb-3">
-        <h6 class="text-uppercase font-weight-bold">
-          <a href="#!">Contact</a>
-        </h6>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-    <hr class="rgba-white-light" style="margin: 0 15%;">
-
-    <!-- Grid row-->
-    <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-      <!-- Grid column -->
-      <div class="col-md-8 col-12 mt-5">
-        <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem
-          aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-          explicabo.
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-      </div>
-      <!-- Grid column -->
-
-    </div>
-    <!-- Grid row-->
-    <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
-
-    <!-- Grid row-->
-    <div class="row pb-3">
+    <div class="row pb-3 text-center justify-content-center">
 
       <!-- Grid column -->
       <div class="col-md-12">
 
         <div class="mb-5 flex-center">
 
+            <div class="social">
+              <a href='https://www.instagram.com/emilysweddings/'><img src="social/1.png" style="width:5%" alt="Chicago Portrait"></a>
+              <a href='mailto:espielerphotography@gmail.com'><img src="social/3.png" style="width:5%" alt="Chicago Portrait"></a>
+              <a href='https://www.facebook.com/EmilySpielerPhotography/'><img src="social/4.png" style="width:5%" alt="Chicago Portrait"></a>
+            </div>
+
           <!-- Facebook -->
-          <a class="fb-ic">
-            <i class="fab fa-facebook-f fa-lg white-text mr-4"> </i>
-          </a>
-          <!-- Twitter -->
-          <a class="tw-ic">
-            <i class="fab fa-twitter fa-lg white-text mr-4"> </i>
-          </a>
-          <!-- Google +-->
-          <a class="gplus-ic">
-            <i class="fab fa-google-plus-g fa-lg white-text mr-4"> </i>
-          </a>
-          <!--Linkedin -->
-          <a class="li-ic">
-            <i class="fab fa-linkedin-in fa-lg white-text mr-4"> </i>
-          </a>
-          <!--Instagram-->
-          <a class="ins-ic">
-            <i class="fab fa-instagram fa-lg white-text mr-4"> </i>
-          </a>
-          <!--Pinterest-->
-          <a class="pin-ic">
-            <i class="fab fa-pinterest fa-lg white-text"> </i>
-          </a>
 
         </div>
 
@@ -200,8 +141,7 @@
   <!-- Footer Links -->
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center py-3">© 2020 Copyright: Emily Spieler Photography
   </div>
   <!-- Copyright -->
 
