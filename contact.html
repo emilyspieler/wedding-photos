@@ -11,44 +11,45 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,800&display=swap" rel="stylesheet">
-  <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
-  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
   <title>Emily Spieler Photography</title>
 </head>
 <body>
-
-
-  <header class="blog-header py-3 px-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-        <a class="text-muted" href="contact.html">Contact</a>
-      </div>
-      <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">Large</a>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="btn btn-sm btn-outline-secondary" href="contact.html">Client Center
-          <ion-icon name="camera-outline"></ion-icon>
-        </a>
-      </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Weddings <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="engagements.html">Engagements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="portraits.html">Portraits</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
 
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="nav-link" href="index.html">Weddings <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href="engagements.html">Engagements</a>
-      <a class="nav-link" href="portraits.html">Portraits</a>
-      <a class="nav-link" href="contact.html">Contact</a>
-  </div>
-
-  <div class="background">
-    <div class="jumbotron text-white rounded bg-photo">
-      <div class="col-md-6 px-0">
-        <h1>Emily Spieler Photography</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 d-flex justify-content-center mt-5">
+        <h1 class="ml13">Emily Spieler Photography</h1>
+      </div>
+      <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
         <h2>Chicago Wedding and Portrait Photography</h2>
       </div>
     </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
 <div class="container">
       <!-- Grid row -->
@@ -59,62 +60,76 @@
         </div>
         <div class="col-md-4 padding-below">
           <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
-            <h1>Who We Are!</h1>
+            <h3>Who We Are!</h3>
           </div>
           <p>For us, an enjoyable customer experience is just as important as creating memorable images. Because of this, we aren't just hired professionals. We are your friends with cameras. Taking photographs should not be a chore; it should be the highlight of your day. We love what we do and our enthusiasm is infectious. Send us a message to learn more!</p>
         </div>
         <div class="col-md-4">
           <img class="img-fluid" src="images/contact/40.jpg" alt="Card image cap">
         </div>
+        <hr>
       </div>
       <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
-        <h1>Get in Touch!</h1>
+        <h3>Get in Touch!</h3>
       </div>
       <div class="col-md-12 d-flex justify-content-center mt-5 no-margin-top">
     <!-- Grid column -->
-    <form action="https://formspree.io/meqklkna" method="POST">
+    <form action="https://formspree.io/meqklkna" method="POST" name="myForm">
       <div class="form-row">
         <div class="form-group col-md-6">
           <label for="inputEmail4">First Name</label>
-          <input type="email" class="form-control" id="inputEmail4" placeholder="First Name">
+          <input type="text" class="form-control" id="inputEmail4" placeholder="First Name" name="fname">
         </div>
         <div class="form-group col-md-6">
           <label for="inputPassword4">Last Name</label>
-          <input type="password" class="form-control" id="inputPassword4" placeholder="Last Name">
+          <input type="text" class="form-control" id="inputPassword4" placeholder="Last Name" name="lname">
         </div>
       </div>
       <div class="form-group">
         <label for="inputAddress">Email Address</label>
-        <input type="text" class="form-control" id="inputAddress" placeholder="Email Address">
+        <input type="text" class="form-control" id="inputAddress" placeholder="Email Address" name="email">
       </div>
       <div class="form-group">
         <label for="inputAddress2">What type of shoot are you interested in?</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Wedding, Portrait, etc.">
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Wedding, Portrait, etc." name="comment">
       </div>
       <div class="form-group">
         <label for="inputAddress2">Estimated Budget?</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Estimated Photography Budget">
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Estimated Photography Budget" name="budget">
       </div>
       <div class="form-group">
         <label for="inputAddress2">Anything else you would like to share?</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Tell us about how we can help you!">
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Tell us about how we can help you!" name="else">
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
       </div>
     </div>
-
+    </div>
 
 </body>
-<!-- Footer -->
-<div class="blog-header line-padding">
+<script>
 
-</div>
+  // Wrap every letter in a span
+var textWrapper = document.querySelector('.ml13');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml13 .letter',
+    translateY: [100,0],
+    translateZ: 0,
+    opacity: [0,1],
+    duration: 1400,
+    delay: (el, i) => 300 + 30 * i
+  })
+
+</script>
+<!-- Footer -->
 <footer class="page-footer font-small indigo">
 
-
-
   <!-- Footer Links -->
+  <div class="container">
     <!-- Grid row-->
     <div class="row pb-3 text-center justify-content-center">
 
@@ -129,13 +144,9 @@
               <a href='https://www.facebook.com/EmilySpielerPhotography/'><img src="social/4.png" style="width:5%" alt="Chicago Portrait"></a>
             </div>
 
-        </div>
+          <!-- Facebook -->
 
-      <!-- Facebook -->
-      <img class="award" src="social/a.png">
-      <img class="award" src="social/b.png">
-      <img class="award" src="social/c.png">
-      <img class="award" src="social/d.png">
+        </div>
 
       </div>
       <!-- Grid column -->
@@ -149,9 +160,8 @@
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright: Emily Spieler Photography
   </div>
-</div>
-
   <!-- Copyright -->
+
 </footer>
 <!-- Footer -->
 </html>
